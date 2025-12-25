@@ -1,0 +1,129 @@
+* { 
+    box-sizing: border-box; 
+}
+html, body { 
+    height: 100%; 
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+}
+
+
+.page {
+  background-image: url("https://images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/1f33596e29405333bdbf2bb0/hgghgh-min1.jpg"); 
+  background-size: cover;
+  background-position: center; 
+  padding: 70px 16px 45px;
+  background-repeat: no-repeat;
+}
+
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.title {
+  margin: 0 0 35px;
+  font-size: 52px;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  align-items: stretch;
+}
+
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 26px 26px 22px;
+  box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+}
+
+
+.num {
+  font-size: 52px;
+  font-weight: 800;
+  color: #f2c200; 
+  margin-bottom: 12px;
+}
+
+
+.text {
+  margin: 0 10px 18px;
+  font-size: 13px;
+  line-height: 1.55;
+  color: #333;
+  font-style: italic;
+}
+
+
+.more {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #222;
+  text-decoration: none;
+  border-bottom: 2px solid #f2c200;
+  padding-bottom: 3px;
+}
+.more:hover {
+  border-bottom-color: #555;
+}
+
+
+.credit {
+  margin: 28px 0 0;
+  font-size: 13px;
+  color: rgba(255,255,255,0.9);
+}
+
+.credit a {
+  color: rgba(255,255,255,0.95);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,0.55);
+}
+.credit a:hover {
+  color: rgba(235, 226, 226, 0.9);
+  border-bottom-color: rgba(235, 226, 226, 0.9);
+}
+.footer {
+  background: #3b3b3b;
+  color: #bdbdbd;
+  text-align: center;
+  padding: 16px;
+  font-size: 12px;
+}
+.footer a {
+  color:#b4d5fe;;
+  text-decoration: none;
+  border-bottom: 1px solid #b4d5fe;
+}
+.footer a:hover {
+  color: #a59e9e;
+  border-bottom-color: #a59e9e;
+}
+
+
+
+@media (max-width: 900px) {
+  .title { font-size: 42px; }
+  .cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 560px) {
+  .page { padding-top: 50px; }
+  .title { font-size: 32px; }
+  .cards { grid-template-columns: 1fr; }
+}
